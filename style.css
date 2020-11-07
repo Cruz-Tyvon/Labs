@@ -9,7 +9,7 @@ body { font-family:'Times New Roman', Times, serif;
   grid-template-rows: auto auto;
   grid-template-areas:
     'header  header'
-    'sidebar content'
+    'nav main'
     'footer  footer';
   grid-gap: 5px;
  }
@@ -27,8 +27,8 @@ body { font-family:'Times New Roman', Times, serif;
   grid-column-end: 3;
 }
 
-.sidebar { grid-area: sidebar; }
-.sidebar ul {
+.nav { grid-area: nav; }
+.nav ul {
   list-style-type: none;
   background: white;
   background-size: 5px;
@@ -37,31 +37,32 @@ body { font-family:'Times New Roman', Times, serif;
   padding: 5px;
   font-size: 25px;
 }
-.sidebar li a {
+.nav li a {
   list-style-type: none;
   color: black;
   display: block;
   padding: 0.25em 0 0.25em 0.25em;
 }
-.sidebar li a:hover {
+.nav li a:hover {
   background-color: black;
   color: white;
   border-radius:5px solid #ddd;
   padding: 8px;
 }
 
-.content { grid-area: content; }
-.content > h2 {
+.main { grid-area: main; }
+.main > h2 {
   font-size: 35px;
   text-decoration-line: underline;
   color: #ddd; 
   text-align: center;
 }
-.content > h3 {
+.main > h3 {
   font-size: 20px;
   text-align: left;
   text-justify: auto;
 }
+
 .row { clear:both}
 .column{
   width: 50%;
