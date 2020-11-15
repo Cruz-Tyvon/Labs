@@ -22,12 +22,24 @@ body { font-family:'Times New Roman', Times, serif;
 }
 
 .header { grid-area: header; }
+.header > div {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 20px;
+}
 .header > img {
   grid-column-start: 1;
   grid-column-end: 3;
 }
 
 .nav { grid-area: nav; }
+.nav > div {
+  float: left;
+  width: 20%;
+  height: 500px;
+}
 .nav ul {
   list-style-type: none;
   background: white;
@@ -51,6 +63,11 @@ body { font-family:'Times New Roman', Times, serif;
 }
 
 .main { grid-area: main; }
+.main > div {
+  float: left;
+  width: 80%;
+  height: 500px;
+} 
 .main > h2 {
   font-size: 35px;
   text-decoration-line: underline;
@@ -88,6 +105,9 @@ body { font-family:'Times New Roman', Times, serif;
 }
 
 .footer { grid-area: footer; }
+.footer > div {
+  clear: both;
+}
 .footer > h2 {
   background-color: #999;
   list-style-type: none;

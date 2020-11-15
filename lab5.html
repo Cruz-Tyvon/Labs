@@ -1,20 +1,72 @@
 <html>
   <head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width">
-      <title>CPSC 2125 Lab 5</title>
-      <link href="style.css" rel="stylesheet" type="text/css" />
-    </head>
-  <body>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>CPSC 2125 Lab 5</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
     <script src="script.js"></script>
-    <header><h1>CPSC 2125 Lab 5</h1></header>
-      <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="lab1.html">Lab 1</a> </li>
-          <li><a href="lab2.html">Lab 2</a> </li>
-          <li><a href="lab3.html">Lab 3</a> </li>
-          <li><a href="lab4.html">Lab 4</a> </li>
-          <li><a href="lab5.html">Lab 5</a> </li>
-        </ul>
-    </body>
-  </html>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="header">
+        <h1>CPSC 2125 Lab 5</h1>
+      </div>
+      <div class="nav">
+        <ul>
+            <li><a href="index.html">Home</a> </li>
+            <li><a href="lab1.html">Lab 1</a> </li>
+            <li><a href="lab2.html">Lab 2</a> </li>
+            <li><a href="lab3.html">Lab 3</a> </li>
+            <li><a href="lab4.html">Lab 4</a> </li>
+            <li><a href="lab5.html">Lab 5</a> </li>
+          </ul></nav>
+      </div>
+      <div class="main">
+        <h2> Please Fill-out the Requested Information</h2>
+        <form method="post" action="https://webdevbasics.net/scripts/yoga.php">
+          <fieldset class="frmStyle">
+            <legend>Personal Info</legend>
+            <label for="lName">Last Name: </label><input type="text" id="lName" name="lName"></br>
+            <label for="fName">First Name: </label><input type="text" id="fName" name="fName" ></br>
+            <label for="myEmail">E-mail: </label><input type="email" id="myEmail" name="myEmail"></br>
+
+            <label for="state">State:</label>
+              <select id="state" name="state">
+                <option value="al">AL</option>
+                <option value="fl">FL</option>
+                <option value="ga">GA</option>
+              </select></br>
+          
+            <label for="marital state">Marital State: </label></br>
+              <input type="radio" id="married" value="married">
+                <label for="married"> Married </label></br>
+              <input type="radio" id="single" value="single">
+                <label for="single"> Single </label></br>
+          
+            <label for="skills">Skills: </label></br>
+              <input type="checkbox" id="skill1" name="skill1" value="Python">
+                <label for="skill1"> I Know Python</label><br>
+              <input type="checkbox" id="skill2" name="skill2" value="Java">
+                <label for="skill2"> I Know Java</label><br>
+              <input type="checkbox" id="skill3" name="skill3" value="HTML">
+                <label for="skill3"> I Know HTML</label><br>
+          
+            <label for="textarea">Comments: </label><br>
+              <textarea name="message" rows="10" cols="30">Enter comments here.</textarea><br><br>
+          
+            <input type="submit" value="Submit"></br>
+            </fieldset>
+          </form>
+      </div>
+      <div class="footer">
+        <h2>Copyright &copy 2020 All Rights Reserved
+          </br>Tyvon Cruz | Email:  
+            <a href="mailto:cruz_tyvon@columbusstate.edu">
+              cruz_tyvon@columbusstate.edu</a>
+        </h2>
+      </div>
+    </div>
+  </body>
+</html>
+
+  
