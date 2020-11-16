@@ -19,13 +19,6 @@ body { font-family:'Times New Roman', Times, serif;
   border-radius: 8px;
   border-width: 10px;
   padding: 6px;
-}
-
-.header { grid-area: header; }
-.header > img {
-  grid-column-start: 1;
-  grid-column-end: 3;
-}
 
 .nav { grid-area: nav; }
 .nav ul {
@@ -68,6 +61,7 @@ body { font-family:'Times New Roman', Times, serif;
   width: 50%;
   float: left;
 }
+  
 .column ul {
   list-style-type: none;
   background: #ddd;
